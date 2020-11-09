@@ -1,5 +1,5 @@
 
-print "cmd script alpha 1.2"
+print "cmd script alpha 1.1.2"
 
 local function wait (cmdSleepGetNum) -- you can name this function
 -- whatever you want, it doesn't matter.
