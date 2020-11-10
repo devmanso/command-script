@@ -1,5 +1,5 @@
 
-print "cmd script alpha 1.1.2"
+print" cmd script  alpha1.1.3"
 
 local function wait (cmdSleepGetNum) -- you can name this function
 -- whatever you want, it doesn't matter.
@@ -8,6 +8,13 @@ local function wait (cmdSleepGetNum) -- you can name this function
 end
 
 local commands = {
+
+		add = function (num1, num2)
+		addnum1 = io.read()
+		addnum2 = io.read()
+		sum = addnum1 + addnum2
+		print (sum)
+		end,
     help = function ()
         print "you'll find it out"
     end,
