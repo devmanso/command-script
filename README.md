@@ -11,6 +11,6 @@ cmd script is run in the terminal at this point in time there are only a few com
 
 1. /stop --kills all processes and exits the terminal
 2. /rand -- prints out a random number from 0 to 1 
-3. /say *insert text here* -- prints out what ever you after '/say '
+3. /say *insert text here* -- prints out what ever you put after '/say '
 4. /sleep *insert number here* -- this command will do nothhing for the amount of time (in seconds) you put in
-5. /help -- doesn't actually give you any help
+5. /help -- doesn't actually give you any help, I just put this here because I felt like it
