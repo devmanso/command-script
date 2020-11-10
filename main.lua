@@ -1,5 +1,4 @@
-
-print" cmd script  alpha1.1.3"
+print" cmd script  alpha1.1.4"
 
 local function wait (cmdSleepGetNum) -- you can name this function
 -- whatever you want, it doesn't matter.
@@ -8,12 +7,31 @@ local function wait (cmdSleepGetNum) -- you can name this function
 end
 
 local commands = {
-
-		add = function (num1, num2)
-		addnum1 = io.read()
-		addnum2 = io.read()
-		sum = addnum1 + addnum2
-		print (sum)
+		
+		div = function (arg, arg2)
+			arg = tonumber( io.read() )
+			arg2 = tonumber( io.read() )		
+			local div_ = arg / arg2
+			print(div)
+		end,
+		multiply = function (arg, arg2)
+			arg = tonumber( io.read() )
+			arg2 = tonumber( io.read() )
+			local product = arg * arg2
+			print(product)
+		end,
+		
+		subtract = function (arg, arg2)
+			arg = tonumber( io.read() )
+			arg2 = tonumber( io.read() )
+			local diff = arg - arg2
+			print(diff)
+		end,
+		add = function (arg, arg2)
+			arg = tonumber( io.read() )
+			arg2 = tonumber( io.read() )
+			sum = arg + arg2
+		print(sum)
 		end,
     help = function ()
         print "you'll find it out"
@@ -47,7 +65,8 @@ local commands = {
 -- Main loop:
 while true do
     io.write '> '
-    local key, _, arg = io.read ():match '^%s*/(%S+)(%s*(.*))$' -- you can type /sleep 1, etc. in one line.
+    local key, _, arg ,arg2, addnum2 = io.read ():match '^%s*/(%S+)(%s*(.*))$' -- you can type /sleep 1, etc. in one line.
     local command = key and key ~= '' and commands [key] or commands [false]
-    command (arg)
+    command (arg, arg2)
+
 end
