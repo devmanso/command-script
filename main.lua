@@ -1,5 +1,5 @@
 function DispDefualtMsg()
-	print(" cmd script  alpha 1.1.5")
+	print(" cmd script  alpha1.1.6")
 end
 
 DispDefualtMsg()
@@ -11,6 +11,9 @@ local function wait (cmdSleepGetNum) -- you can name this function
 end
 
 local commands = {
+		console = function (arg)
+			MainLoop = false
+		end,
 		clr = function (arg)
 			print"are you a unix user? Y or N"
 			arg = io.read()
@@ -56,7 +59,7 @@ local commands = {
             print 'what do you want to say?'
             arg = io.read ()
         end
-        print(arg)
+        print (arg)
     end,
     stop = function ()
         os.exit ()
@@ -77,8 +80,10 @@ local commands = {
     end
 }
 
+MainLoop = true
+
 -- Main loop:
-while true do
+while MainLoop do
     io.write '> '
     local key, _, arg ,arg2, addnum2 = io.read ():match '^%s*/(%S+)(%s*(.*))$' -- you can type /sleep 1, etc. in one line.
     local command = key and key ~= '' and commands [key] or commands [false]
