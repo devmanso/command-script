@@ -1,8 +1,8 @@
 # command-script
 command script (or cmd script for short) is very simple programming language that runs on the Lua interpreter, the language is similar to minecraft commands. it is currently in Alpha 1.1.5
 
-# whats new in command script 1.1.5:
-1. added /clr command, it clears the screen
+# whats new in command script 1.1.6:
+1. added /console command, it goes back to the Lua console, once this command is executed it cannot be undone.
 
 # what does cmd script code look like?
 cmd script is run in the terminal, at this point in time there are only a few commands:
@@ -14,12 +14,13 @@ cmd script is run in the terminal, at this point in time there are only a few co
 4. /sleep *insert number here* -- this command will do nothhing for the amount of time (in seconds) you put in
 5. /help -- doesn't actually give you any help, I just put this here because I felt like it
 6. /clr -- clears the console
+7. /console -- goes back to the Lua console, this command cannot be undone
 
 ## math commands
-7. /add 
-8. /subtract 
-9. /div
-10. /multiply
+8. /add 
+9. /subtract 
+10. /div
+11 /multiply
 -- I don't think I need to explain what these do.
 
 (Note: the math commands are a bit weird, this is something I will fix later or maybe not at all)
