@@ -56,7 +56,7 @@ local commands = {
             print 'what do you want to say?'
             arg = io.read ()
         end
-        print (colors('%{red}', arg))
+        print(arg)
     end,
     stop = function ()
         os.exit ()
