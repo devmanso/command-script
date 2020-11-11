@@ -11,6 +11,10 @@ local function wait (cmdSleepGetNum) -- you can name this function
 end
 
 local commands = {
+		ver = function ()
+			local VER_ = "alpha 1.1.7"
+			print(VER_)
+		end,
 		console = function (arg)
 			MainLoop = false
 		end,
@@ -85,7 +89,7 @@ MainLoop = true
 -- Main loop:
 while MainLoop do
     io.write '> '
-    local key, _, arg ,arg2, addnum2 = io.read ():match '^%s*/(%S+)(%s*(.*))$' -- you can type /sleep 1, etc. in one line.
+    local key, _, arg ,arg2 = io.read ():match '^%s*/(%S+)(%s*(.*))$' -- you can type /sleep 1, etc. in one line.
     local command = key and key ~= '' and commands [key] or commands [false]
     command (arg, arg2)
 
