@@ -1,5 +1,5 @@
 # command-script
-command script (or cmd script for short) is very simple programming language that runs on the Lua interpreter, the language is similar to minecraft commands. it is currently in Alpha 1.1.5
+command script (or cmd script for short) is very simple programming language that runs on the Lua interpreter, the language is similar to minecraft commands. it is currently in Alpha 1.1.6
 
 # whats new in command script 1.1.6:
 1. added /console command, it goes back to the Lua console, once this command is executed it cannot be undone.
