@@ -1,5 +1,5 @@
 function DispDefualtMsg()
-	print(" cmd script  alpha1.1.4")
+	print(" cmd script  alpha 1.1.5")
 end
 
 DispDefualtMsg()
