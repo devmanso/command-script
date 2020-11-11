@@ -1,4 +1,8 @@
-print" cmd script  alpha1.1.4"
+function DispDefualtMsg()
+	print(" cmd script  alpha1.1.4")
+end
+
+DispDefualtMsg()
 
 local function wait (cmdSleepGetNum) -- you can name this function
 -- whatever you want, it doesn't matter.
@@ -7,7 +11,18 @@ local function wait (cmdSleepGetNum) -- you can name this function
 end
 
 local commands = {
-		
+		clr = function (arg)
+			print"are you a unix user? Y or N"
+			arg = io.read()
+			
+			if arg == "y" or "Y" then
+				os.execute("clear")
+				DispDefualtMsg()
+			elseif arg == "n" or "N" then
+				os.execute("cls")
+				DispDefualtMsg()
+				end
+		end,
 		div = function (arg, arg2)
 			arg = tonumber( io.read() )
 			arg2 = tonumber( io.read() )		
@@ -41,7 +56,7 @@ local commands = {
             print 'what do you want to say?'
             arg = io.read ()
         end
-        print (arg)
+        print (colors('%{red}', arg))
     end,
     stop = function ()
         os.exit ()
