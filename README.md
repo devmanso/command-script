@@ -27,3 +27,6 @@ cmd script is run in the terminal, at this point in time there are only a few co
 (Note: the math commands are a bit weird, this is something I will fix later or maybe not at all)
 
 run on repl.it : https://repl.it/@Planebagel/cmd-script#main.lua
+
+## having isssues with cmd script, you want a new feature added, questions?
+if you have a question, want a new feature added, etc. Create an issue with the appropriate label
