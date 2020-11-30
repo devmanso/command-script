@@ -7,7 +7,7 @@ command script (or cmd script for short) is very simple programming language tha
 # what does cmd script code look like?
 cmd script is run in the terminal, at this point in time there are only a few commands:
 
-##List of commands:
+## List of commands:
 1. /stop --kills all processes and exits the terminal
 2. /rand -- prints out a random number from 0 to 1 
 3. /say *insert text here* -- prints out what ever you put after '/say '
