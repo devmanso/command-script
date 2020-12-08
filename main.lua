@@ -15,66 +15,66 @@ end
 
 local commands = {
 
-		ghublnk = function ()
-			print("https://github.com/Planebagels/command-script")
-		end,
-		luaver = function ()
-			print("you are using Lua version:",_VERSION,"!\n")-- _VERSION holds what version
-			-- of lua you are using.
-		end,
-		ver = function ()
-			print(VER_)
-		end,
-		console = function (arg)
-			MainLoop = false
-		end,
-		clr = function (arg)
-			print"are you a unix user? Y or N"
-			arg = io.read()
+	ghublnk = function ()
+		print("https://github.com/Planebagels/command-script")
+	end,
+	luaver = function ()
+		print("you are using Lua version:",_VERSION,"!\n")-- _VERSION holds what version
+		-- of lua you are using.
+	end,
+	ver = function ()
+		print(VER_)
+	end,
+	console = function (arg)
+		MainLoop = false
+	end,
+	clr = function (arg)
+		print"are you a unix user? Y or N"
+		arg = io.read()
 			
-			if arg == "y" or "Y" then
-				os.execute("clear")
-				DispDefualtMsg()
-			elseif arg == "n" or "N" then
-				os.execute("cls")
-				DispDefualtMsg()
-				end
-		end,
-		div = function (arg, arg2)
-			arg = tonumber( io.read() )
-			arg2 = tonumber( io.read() )		
-			local div_ = arg / arg2
-			print(div)
-		end,
-		multiply = function (arg, arg2)
-			arg = tonumber( io.read() )
-			arg2 = tonumber( io.read() )
-			local product = arg * arg2
-			print(product)
-		end,
+	if arg == "y" or "Y" then
+		os.execute("clear")
+		DispDefualtMsg()
+	elseif arg == "n" or "N" then
+		os.execute("cls")
+		DispDefualtMsg()
+		end
+	end,
+	div = function (arg, arg2)
+		arg = tonumber( io.read() )
+		arg2 = tonumber( io.read() )		
+		local div_ = arg / arg2
+		print(div)
+	end,
+	multiply = function (arg, arg2)
+		arg = tonumber( io.read() )
+		arg2 = tonumber( io.read() )
+		local product = arg * arg2
+		print(product)
+	end,
 		
-		subtract = function (arg, arg2)
-			arg = tonumber( io.read() )
-			arg2 = tonumber( io.read() )
-			local diff = arg - arg2
-			print(diff)
-		end,
+	subtract = function (arg, arg2)
+		arg = tonumber( io.read() )
+		arg2 = tonumber( io.read() )
+		local diff = arg - arg2
+		print(diff)
+	end,
 		add = function (arg, arg2)
-			arg = tonumber( io.read() )
-			arg2 = tonumber( io.read() )
-			sum = arg + arg2
+		arg = tonumber( io.read() )
+		arg2 = tonumber( io.read() )
+		sum = arg + arg2
 		print(sum)
-		end,
-    help = function ()
-        print "you'll find it out"
-    end,
-    say = function (arg)
-        if arg == '' then
-            print 'what do you want to say?'
-            arg = io.read ()
+	end,
+   	help = function ()
+       	 print "you'll find it out"
+    	end,
+   	 say = function (arg)
+        	if arg == '' then
+          	  print 'what do you want to say?'
+            	arg = io.read ()
         end
-        print (arg)
-    end,
+print (arg)
+end,
     stop = function ()
         os.exit ()
     end,
